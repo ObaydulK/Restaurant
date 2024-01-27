@@ -13,6 +13,7 @@ import img6 from '../../../assets/home/06.png';
 const Banner = () => {
     return (
         <Carousel>
+            
             <div>
                 <img src={img1} />
                 <p className="legend">Obaydur</p>
