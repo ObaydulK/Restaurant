@@ -48,8 +48,7 @@ const Testimonials = () => {
 
                 </Swiper>
 
-            </section>
-            {reviews.length}
+            </section> 
 
         </>
     );

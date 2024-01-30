@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import './Catagory.css';
 
 
 // import required modules
@@ -40,6 +41,14 @@ const Catagory = () => {
                     <SwiperSlide> <img src={slider5} alt="" /><h1 className='text-4xl uppercase text-white -mt-16 text-center font-bold'>Salads</h1></SwiperSlide>
                 </Swiper>
             </section>
+            <div className="Bg-Catagory my-20 p-20">
+                <div className='text-center p-24   bg-slate-50 text-black'>
+                    <h1 className='uppercase md:text-5xl font-mono font-bold '>Bistro Boss</h1>
+                    <p className='text-2xl'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, aspernatur laborum aut fuga tempore at qui deleniti, porro veritatis libero quae animi, officia excepturi molestias hic dolores. Tenetur, perferendis qui.</p>
+                </div>
+            </div>
+
+
         </>
     );
 };

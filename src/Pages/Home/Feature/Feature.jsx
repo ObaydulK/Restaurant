@@ -1,3 +1,4 @@
+import ButtonBt from "../../../Components/ButtonBt/ButtonBt";
 import SectionTitle from "../../../Components/SectionTitle/SectionTitle";
 import feature from "../../../assets/home/featured.jpg"
 import "./Feature.css"
@@ -21,10 +22,12 @@ const Feature = () => {
                         <p>26 Jun 2024</p>
                         <p className="uppercase"> Where Can i get some?</p>
                         <p className="font-bold text-2xl">Lorem ipsum dolor, sit amet consectetur  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus blanditiis, enim reprehenderit eos ipsa nihil, eligendi est mollitia laudantium adipisci assumenda amet deleniti dolores! Temporibus praesentium ex odit consequuntur. adipisicing elit. Molestiae omnis odit quisquam provident animi blanditiis nobis, aliquam maxime ducimus accusantium, in esse nesciunt? Sequi iure libero iste quidem, impedit quod?</p>
-                        <button className="btn btn-outline border-0 border-b-4 text-black"> Order Now</button>
+                        {/* <button className="btn btn-outline border-0 border-b-4 text-black"> Order Now</button> */}
+                        <ButtonBt
+                            Button='Order Now'
+                        ></ButtonBt>
                     </div>
                 </div>
-
             </div>
         </section>
     );
