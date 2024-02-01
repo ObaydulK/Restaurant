@@ -3,11 +3,12 @@ import Footer from "../Pages/Shared/Footer/Footer";
 import NavBar from "../Pages/Shared/NevBar/NavBar";
 
 const Main = () => {
+    const noheaderfooter = location.pathname.includes('login')
     return (
         <div>
-            <NavBar/>
-            <Outlet/>
-            <Footer/>
+            {noheaderfooter || <NavBar />}
+            <Outlet />
+            {noheaderfooter || <Footer />}
         </div>
     );
 };

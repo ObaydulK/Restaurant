@@ -16,7 +16,6 @@ const Cover = ({ img, title, subtitle }) => {
                     <div className=" text-white bg-black bg-opacity-30 px-24 py-20">
                         <h1 className="mb-5 text-5xl font-bold uppercase">{title}</h1>
                         <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.{subtitle}</p>
-
                     </div>
                 </div>
             </div>
