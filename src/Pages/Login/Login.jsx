@@ -1,20 +1,24 @@
 
+import { useEffect, useState } from 'react';
+import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 
-
-
-import img from "../ContactUs/ContactUs/ContactUs"
 
 
 const Login = () => {
+    // const [disabled,setDisabled]= useState(true);
+    useEffect(() => {
+        loadCaptchaEnginge(6);
 
-const handleLogin = event => {
-    event.preventDefault();
-    const form =event.target;
-    const email = form.email.value;
-    const password =form.password.value;
-    console.log(email, password);
-}
+    }, [])
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+    }
 
 
 
@@ -22,7 +26,7 @@ const handleLogin = event => {
 
 
 
-    
+
     return (
         <div>
             <div className="hero min-h-screen  ">
@@ -48,7 +52,15 @@ const handleLogin = event => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6"> 
+                            <div className="form-control">
+                                <label className="label">
+                                    <LoadCanvasTemplate />
+                                </label>
+                                <input type="text" placeholder="place type your captcha" name="captach" className="input input-bordered" required />
+
+                            </div>
+                            <div className="form-control mt-6">
+                                {/* disabled={disabled} */}
                                 <input className="btn btn-primary" type="submit" value='Login' />
                             </div>
                         </form>

@@ -2,15 +2,12 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
     const NavMenu = <>
-        <li> <Link to="/">Home</Link> </li> 
-        <li><Link to="/contactUs" >ContactUs</Link></li>
-        <li> <Link to="/deshboard">Dashboard</Link> </li>
+        <li> <Link to="/">Home</Link> </li>  
+        {/* <li> <Link to="/deshboard">Dashboard</Link> </li> */}
+        <li> <Link to="/Contactus">Contact Us</Link> </li>
         <li> <Link to="/menu">Our Menu</Link> </li>
         <li> <Link to="/orderfood/salad">Order Food</Link> </li>
         <li> <Link to="/login">Login</Link> </li>
-
-
-
     </>
     return (
         <>
